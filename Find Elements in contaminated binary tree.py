@@ -24,3 +24,18 @@ class FindElements:
 
     def find(self, target: int) -> bool:
         return target in self.values  # O(1) lookup
+
+
+# Given tree (contaminated with -1):
+#        -1
+#       /  \
+#     -1    -1
+#    /      /
+#  -1     -1
+
+root = TreeNode(-1, TreeNode(-1, TreeNode(-1)), TreeNode(-1, TreeNode(-1)))
+obj = FindElements(root)
+
+print(obj.find(1))  # True
+print(obj.find(4))  # True
+print(obj.find(5))  # False
