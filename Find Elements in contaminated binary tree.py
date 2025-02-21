@@ -37,5 +37,5 @@ root = TreeNode(-1, TreeNode(-1, TreeNode(-1)), TreeNode(-1, TreeNode(-1)))
 obj = FindElements(root)
 
 print(obj.find(1))  # True
-print(obj.find(4))  # True
-print(obj.find(5))  # False
+print(obj.find(4))  # False
+print(obj.find(5))  # True
